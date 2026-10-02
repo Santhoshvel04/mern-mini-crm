@@ -2,10 +2,12 @@ const app = require('./app');
 const env = require('./config/env');
 const logger = require('./utils/logger');
 const { connectDb, disconnectDb } = require('./config/db');
+const { seedIfEmpty } = require('./scripts/seedLib');
 
 (async () => {
   try {
     await connectDb();
+    await seedIfEmpty();
   } catch (e) {
     logger.error(`[db] connection failed: ${e.message}`);
     process.exit(1);
