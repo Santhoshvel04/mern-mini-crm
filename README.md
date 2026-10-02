@@ -1,7 +1,5 @@
 # Mini CRM (MERN Interview Assignment)
 
-Monorepo layout follows the same split as `asu` (`asu-frontend` + `asu-service`):
-
 | Folder | Role |
 |---|---|
 | `mini-crm-frontend` | React SPA (Vite, React Router, MUI, Axios, TanStack Query) |
@@ -40,4 +38,4 @@ Seed login: `john@mini-crm.com` / `Password123`
 
 ## API prefix
 
-All JSON APIs live under `/api/v1`, same convention as the ASU service.
+All JSON APIs live under `/api/v1`.
